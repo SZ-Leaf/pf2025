@@ -1,14 +1,14 @@
 
 Hope you enjoy your new logo, here are the people that
 made your beautiful logo happen :)
-font name: Quantico-Regular
-font link: https://fonts.google.com/specimen/Quantico
-font author: MADType
-font author site: http://www.madtype.com/
+font name: Karla-BoldItalic
+font link: https://fonts.google.com/specimen/Karla
+font author: Jonny Pinhorn
+font author site: https://twitter.com/jonpinhorn_type
 
 
 icon designer: leo-graph.com
 icon designer link: /graphinedesign
         
-{"bg-gradient-0":"#021802","bg-gradient-1":"#60DBCC","icon":"#ffffff","font":"#ffffff","slogan":"#ffffff"}
+{"bg-gradient-0":"#4B279B","bg-gradient-1":"#DF99D8","icon":"#ffffff","font":"#ffffff","slogan":"#ffffff"}
       
