@@ -8,8 +8,8 @@ const Space = ({ isMobile }) => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={0.15}  />
-      <pointLight intensity={1} />
+      {/* <hemisphereLight intensity={0.15}  />
+      <pointLight intensity={1} /> */}
       <primitive 
         object={space.scene}
         scale={isMobile ? 1.3 : 1.5}
@@ -40,6 +40,7 @@ const SpaceCanvas = () => {
 
   return(
     <Canvas 
+      // className='hidden'
       frameloop='demand'
       shadows
       camera={{ position: [0, 0, 4], fov: 20 }}
@@ -58,6 +59,7 @@ const SpaceCanvas = () => {
         />
 
         <Space isMobile={isMobile} />
+        <Preload all />
       </Suspense>
 
     </Canvas>
