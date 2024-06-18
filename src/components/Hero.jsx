@@ -1,13 +1,15 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
-import { SpaceCanvas } from './canvas'
+import { SpaceCanvas, StarsCanvas } from './canvas'
+
+import ErrorBoundary from './Boundaries'
 
 
 const Hero = () => {
   return (
     <section className='relative w-full h-screen mx-auto'>
-      
+
       <div className={`section1div ${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
 
         <div className='flex flex-col justify-center items-start mt-5'>
@@ -31,7 +33,10 @@ const Hero = () => {
         </div>
       </div>
 
-      <SpaceCanvas />
+      <ErrorBoundary>
+          <SpaceCanvas />
+          {/* <StarsCanvas /> */}
+      </ErrorBoundary>
 
       <div className='absolute xs:bottom-3 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>

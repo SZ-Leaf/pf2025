@@ -23,6 +23,7 @@ import {
    jobit,
    tripguide,
    threejs,
+   mysql
  } from "../assets";
  
  export const navLinks = [
@@ -73,7 +74,7 @@ import {
      icon: javascript,
    },
    {
-     name: "TypeScript",
+     name: "Sass",
      icon: typescript,
    },
    {
@@ -93,8 +94,8 @@ import {
      icon: nodejs,
    },
    {
-     name: "MongoDB",
-     icon: mongodb,
+     name: "MySQL",
+     icon: mysql,
    },
    {
      name: "Three JS",
