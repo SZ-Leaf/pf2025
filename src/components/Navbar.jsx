@@ -31,27 +31,35 @@ const Navbar = () => {
 
           <img src={Default}
           alt="logo"
-          className='w-9 h-9 object-contain'
+          className='w-9 h-9 object-contain rounded-md'
           />
 
           <p className='text-white text-[17px] font-bold cursor-pointer flex'>Sary &nbsp;<span className='sm:block hidden'>| Full Stack Dev.</span></p>
 
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
-          {navLinks.map((link) =>(
-            <li key={link.id}
-                className={`${
-                  active === link.title
-                    ? "text-white" : "text-secondary"
-                }
-                hover:text-white text-[18px] font-medium cursor-pointer`}
-                onClick={() => setActive(link.title)}
-            >
-              <a href={`#${link.id}`}>{link.title}</a>
-            </li>
-          ))}
-        </ul>
+        <div className='flex gap-10'>
+
+          <ul className='list-none hidden sm:flex flex-row gap-10'>
+            {navLinks.map((link) =>(
+              <li key={link.id}
+                  className={`${
+                    active === link.title
+                      ? "text-white" : "text-secondary"
+                  }
+                  hover:text-white text-[18px] font-medium cursor-pointer`}
+                  onClick={() => setActive(link.title)}
+              >
+                <a href={`#${link.id}`}>{link.title}</a>
+              </li>
+            ))}
+          </ul>
+
+          <button className='text-white px-2.5 bg-[#8A58B5] rounded-md'>
+            CV
+          </button>
+
+        </div>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img src={toggle ? close : menu}
@@ -59,7 +67,7 @@ const Navbar = () => {
           className='w-[28px] h-[28px] object-contain cursor-pointer'
           onClick={() => setToggle(!toggle)} />
         
-          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl `}>
+          <div className={`${!toggle ? 'translate-x-full opacity-0' : 'translate-x-0 opacity-100'} transition-all duration-300 p-6 black-gradient absolute top-16 right-0 mx-4 min-w-[130px] z-10 rounded-xl `}>
 
             <ul className='list-none flex justify-end items-start flex-col gap-4'>
               {navLinks.map((link) =>(
@@ -90,12 +98,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-
-// filter: "drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5))"
-
-// style={{
-//   boxShadow: "0px 0px 20px 10px rgba(255, 255, 255, 0.75)",
-//   WebkitBoxShadow: "0px 0px 20px 10px rgba(255, 255, 255, 0.75)",
-//   MozBoxShadow: "0px 0px 20px 10px rgba(255, 255, 255, 0.75)",
-//   flexBasis: "100%"
-//   }}
