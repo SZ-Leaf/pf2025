@@ -1,3 +1,4 @@
+import { color } from "framer-motion";
 import {
    mobile,
    backend,
@@ -23,7 +24,12 @@ import {
    jobit,
    tripguide,
    threejs,
-   mysql
+   mysql,
+   sass,
+   expressjs,
+   manouchti,
+   zeal,
+   ewow
  } from "../assets";
  
  export const navLinks = [
@@ -47,11 +53,11 @@ import {
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Backend Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Mobile Developer",
     icon: backend,
   },
   {
@@ -75,15 +81,11 @@ import {
    },
    {
      name: "Sass",
-     icon: typescript,
+     icon: sass,
    },
    {
      name: "React JS",
      icon: reactjs,
-   },
-   {
-     name: "Redux Toolkit",
-     icon: redux,
    },
    {
      name: "Tailwind CSS",
@@ -98,21 +100,25 @@ import {
      icon: mysql,
    },
    {
-     name: "Three JS",
-     icon: threejs,
-   },
-   {
-     name: "git",
+     name: "Git",
      icon: git,
    },
    {
-     name: "figma",
+     name: "Figma",
      icon: figma,
    },
    {
-     name: "docker",
+     name: "Docker",
      icon: docker,
    },
+   {
+    name: "ExpressJs",
+    icon: expressjs,
+   },
+   {
+    name: "Shopify",
+    icon: shopify,
+   }
  ];
  
  const experiences = [
@@ -199,68 +205,114 @@ import {
  
  const projects = [
    {
-     name: "Car Rent",
+     name: "CoCoWork",
      description:
-       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+       "Web-based platform for Co-Working reservations/management Developed for a hackathon, with the development based on a provided project brief. It involves teamwork through collaborating with a designer.",
      tags: [
        {
-         name: "react",
-         color: "blue-text-gradient",
+        name: "ReactJS",
+        color: "blue-text-gradient",
        },
        {
-         name: "mongodb",
+        name: "NodeJS",
+        color: "green-text-gradient",
+       },
+       {
+        name: "ExpressJS",
+        color: "blue-text-gradient",
+       },
+       {
+         name: "MariaDB",
          color: "green-text-gradient",
        },
        {
-         name: "tailwind",
+         name: "Scss",
          color: "pink-text-gradient",
        },
      ],
      image: carrent,
-     source_code_link: "https://github.com/",
+     source_code_link: "https://github.com/SZ-Leaf/Cocowork-server",
    },
    {
-     name: "Job IT",
+     name: "Manouchti",
      description:
-       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+       "Manouchti is an shopify eCommerce startup company selling mainly in Lebanon and Côte d'Ivoire, providing everything from clothing & health products to accessories & toys.",
      tags: [
        {
-         name: "react",
-         color: "blue-text-gradient",
-       },
-       {
-         name: "restapi",
+         name: "Shopify",
          color: "green-text-gradient",
        },
        {
-         name: "scss",
-         color: "pink-text-gradient",
-       },
-     ],
-     image: jobit,
-     source_code_link: "https://github.com/",
-   },
-   {
-     name: "Trip Guide",
-     description:
-       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-     tags: [
-       {
-         name: "nextjs",
+         name: ".Liquid",
          color: "blue-text-gradient",
        },
        {
-         name: "supabase",
-         color: "green-text-gradient",
+         name: "Css",
+         color: "blue-text-gradient",
        },
        {
-         name: "css",
-         color: "pink-text-gradient",
+        name: "HTML",
+        color: "orange-text-gradient",
+       },
+       {
+        name: "Javascript",
        },
      ],
-     image: tripguide,
-     source_code_link: "https://github.com/",
+     image: manouchti,
+     source_code_link: "https://manouchti.com",
    },
+   {
+     name: "Zeal MENA",
+     description:
+       "ZEAL MENA is a marketing consultancy and media production company. A young boutique agency based in the heart of Beirut. Website to be remade with react.",
+     tags: [
+       {
+         name: "HTML",
+         color: "orange-text-gradient",
+       },
+       {
+         name: "Scss",
+         color: "pink-text-gradient",
+       },
+       {
+         name: "Javascript",
+       },
+       {
+         name: "Mailer",
+         color: "green-text-gradient",
+       },
+     ],
+     image: zeal,
+     source_code_link: "https://zealmena.com",
+   },
+   {
+    name: "eWow Community",
+    description:
+      "eWoW is a private forum developed for a private Word of Warcraft Server.",
+    tags: [
+      {
+        name: "ReactJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Scss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "NodeJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ExpressJS",
+      },
+      {
+        name: "MariaDB",
+        color: "green-text-gradient",
+      },
+    ],
+    image: ewow,
+    source_code_link: "https://github.com/SZ-Leaf/Forumify-Server",
+  },
  ];
  
  export { services, technologies, experiences, testimonials, projects };

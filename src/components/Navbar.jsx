@@ -11,6 +11,11 @@ import Profile from '../assets/createdLogo/profile.png'
 
 const Navbar = () => {
 
+  const openCvInNewTab = () => {
+    const cvPath = '';
+    window.open(cvPath, '_blank');
+  };
+
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
 
@@ -55,8 +60,8 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <button className='text-white px-2.5 bg-[#8A58B5] rounded-md'>
-            CV
+          <button className='text-white hidden sm:block px-2.5 bg-[#8A58B5] rounded-md'  onClick={openCvInNewTab}>
+            CV 🠗
           </button>
 
         </div>
@@ -86,6 +91,9 @@ const Navbar = () => {
                   <a href={`#${link.id}`}>{link.title}</a>
                 </li>
               ))}
+              <li className='text-white px-2.5 bg-[#8A58B5] rounded-md w-full text-center'>
+                CV 🠗
+              </li>
             </ul>
 
           </div>
