@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import { styles } from '../styles'
 import { navLinks } from '../constants'
-import { logo, menu, close } from '../assets'
+import { menu } from '../assets'
 import Cover from '../assets/createdLogo/cover.png'
 import Default from '../assets/createdLogo/default.png'
 import Profile from '../assets/createdLogo/profile.png'
