@@ -8,4 +8,5 @@ export default defineConfig({
     include: "**/*.js",
   })],
   assetsInclude: ['**/*.JPG'],
-})
+  base: "https://sz-leaf.github.io/pf-prod/",
+});
