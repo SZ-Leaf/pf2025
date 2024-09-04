@@ -8,5 +8,5 @@ export default defineConfig({
     include: "**/*.js",
   })],
   assetsInclude: ['**/*.JPG'],
-  base: "/pf-prod/",
+  base: "/",
 });
