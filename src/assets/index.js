@@ -36,6 +36,7 @@ import tripguide from "./tripguide.png";
 import manouchti from "./manouchti2.png"
 import zeal from "./zeal.png"
 import ewow from "./eWoW.png"
+import legacy from "./legacywebsite.JPG"
 
 export {
   logo,
@@ -71,5 +72,6 @@ export {
   shopify,
   manouchti,
   zeal,
-  ewow
+  ewow,
+  legacy
 };

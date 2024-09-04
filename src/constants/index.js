@@ -29,7 +29,8 @@ import {
    expressjs,
    manouchti,
    zeal,
-   ewow
+   ewow,
+   legacy
  } from "../assets";
  
  export const navLinks = [
@@ -56,17 +57,9 @@ import {
     title: "Backend Developer",
     icon: mobile,
   },
-  {
-    title: "Mobile Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
 ];
  
- const technologies = [
+const technologies = [
    {
      name: "HTML 5",
      icon: html,
@@ -119,9 +112,9 @@ import {
     name: "Shopify",
     icon: shopify,
    }
- ];
+];
  
- const experiences = [
+const experiences = [
    {
      title: "React.js Developer",
      company_name: "Starbucks",
@@ -174,9 +167,9 @@ import {
        "Participating in code reviews and providing constructive feedback to other developers.",
      ],
    },
- ];
+];
  
- const testimonials = [
+const testimonials = [
    {
      testimonial:
        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
@@ -201,9 +194,9 @@ import {
      company: "456 Enterprises",
      image: "https://randomuser.me/api/portraits/women/6.jpg",
    },
- ];
+];
  
- const projects = [
+const projects = [
    {
      name: "CoCoWork",
      description:
@@ -286,6 +279,29 @@ import {
      source_code_link: "https://zealmena.com",
    },
    {
+    name: "LegacyTrustFinancial",
+    description: "Financial sercives company website.",
+    tags: [
+      {
+        name: "ReactJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Scss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "NodeJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ExpressJS",
+      },
+    ],
+    image: legacy,
+    source_code_link: '#',
+   },
+   {
     name: "eWow Community",
     description:
       "eWoW is a private forum developed for a private Word of Warcraft Server.",
@@ -312,7 +328,8 @@ import {
     ],
     image: ewow,
     source_code_link: "https://github.com/SZ-Leaf/Forumify-Server",
-  },
- ];
+   },
+   
+];
  
  export { services, technologies, experiences, testimonials, projects };

@@ -39,7 +39,7 @@ const Navbar = () => {
           className='w-9 h-9 object-contain rounded-md'
           />
 
-          <p className='text-white text-[17px] font-bold cursor-pointer flex'>Sary &nbsp;<span className='sm:block hidden'>| Full Stack Dev.</span></p>
+          <p className='text-white text-[17px] font-bold cursor-pointer flex'>| Sary Zeaiter</p>
 
         </Link>
 

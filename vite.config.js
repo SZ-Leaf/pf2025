@@ -7,4 +7,5 @@ export default defineConfig({
     include: "**/*.jsx",
     include: "**/*.js",
   })],
+  assetsInclude: ['**/*.JPG'],
 })
