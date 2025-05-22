@@ -216,29 +216,29 @@ const projects = [
      image: zeal,
      source_code_link: "https://zealmena.com",
    },
-   {
-    name: "LegacyTrustFinancial",
-    description: "Financial sercives company website.",
-    tags: [
-      {
-        name: "ReactJS",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Scss",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "NodeJS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "ExpressJS",
-      },
-    ],
-    image: legacy,
-    source_code_link: '#',
-   },
+  //  {
+  //   name: "LegacyTrustFinancial",
+  //   description: "Financial sercives company website.",
+  //   tags: [
+  //     {
+  //       name: "ReactJS",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "Scss",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "NodeJS",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "ExpressJS",
+  //     },
+  //   ],
+  //   image: legacy,
+  //   source_code_link: '#',
+  //  },
    {
     name: "eWow Community",
     description:

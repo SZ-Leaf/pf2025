@@ -42,7 +42,7 @@ const About = () => {
         variants={fadeIn('','','0.1','1')}
         className='mt-4 text-secondary text=[18px] max-w-3xl leading-[30px]'
       >
-        As an adept software developer, I possess proficiency in JavaScript and C#, along with expertise in frameworks such as React and Node.js. I am known for my quick learning abilities and collaborative approach with clients to develop efficient, scalable, and user-friendly solutions. Let's collaborate to transform your ideas into reality!
+        Je suis un développeur Fullstack avec des antécédents professionnels en IT (systèmes et réseaux), actuellement en Master en développement logiciel et IoT. Je suis à la recherche d'une opportunité en alternance en France pour appliquer mes compétences à des projets concrets et approfondir mon expertise. Reconnu pour mes capacités de résolution de problèmes et ma passion pour l'innovation, je suis déterminé à fournir des solutions de haute qualité qui favorisent le succès.
       </motion.p>
 
       <div className='mt-12 flex justify-center flex-wrap gap-10'>

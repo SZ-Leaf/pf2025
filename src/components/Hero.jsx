@@ -31,7 +31,7 @@ const Hero = () => {
 
         <SpaceCanvas />
 
-      <div className='absolute xs:bottom-3 bottom-5 w-full flex justify-center items-center'>
+      <div className='absolute bottom-14 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[25px] h-[50px] rounded-3xl border-2 border-secondary flex justify-center items-start p-2'>
             <motion.div

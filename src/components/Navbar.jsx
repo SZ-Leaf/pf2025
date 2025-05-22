@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import { styles } from '../styles'
 import { navLinks } from '../constants'
-import { menu } from '../assets'
+import { menu, close } from '../assets'
 import Cover from '../assets/createdLogo/cover.png'
 import Default from '../assets/createdLogo/default.png'
 import Profile from '../assets/createdLogo/profile.png'
@@ -68,7 +68,7 @@ const Navbar = () => {
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img src={toggle ? close : menu}
-          alt='menu'
+          alt='Menu'
           className='w-[28px] h-[28px] object-contain cursor-pointer'
           onClick={() => setToggle(!toggle)} />
         
