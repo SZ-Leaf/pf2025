@@ -35,8 +35,8 @@ const About = () => {
   const [language, setLanguage] = useState('fr');
 
   const translations = {
-    fr:"Je suis un développeur Fullstack avec des antécédents professionnels en IT (systèmes et réseaux), actuellement en Master en développement logiciel et IoT. Je suis à la recherche d'une opportunité en alternance en France pour appliquer mes compétences à des projets concrets et approfondir mon expertise. Reconnu pour mes capacités de résolution de problèmes et ma passion pour l'innovation, je suis déterminé à fournir des solutions de haute qualité qui favorisent le succès.",
-    en:"I am a Fullstack developer with professional experience in IT (systems and networks), currently pursuing a Master's degree in software and IoT development. I am seeking an apprenticeship opportunity in France to apply my skills to concrete projects and deepen my expertise. Recognized for my problem-solving abilities and passion for innovation, I am committed to delivering high-quality solutions that drive success."
+    fr:"Je suis un développeur Fullstack avec un parcours professionnel en IT (systèmes et réseaux). Doté d’un bon relationnel client et capable de m’adapter rapidement, je suis à la recherche de nouvelles opportunités pour mettre mes compétences en pratique sur des projets concrets. Reconnu pour mes capacités de résolution de problèmes et ma passion pour l'innovation, je suis prêt à relever de nouveaux défis professionnels et reste également ouvert à des missions freelance où mon expertise pourrait être utile.",
+    en:"I’m a Fullstack developer with a professional background in IT (systems and networks). With strong customer relations skills and a quick adaptability, I’m looking for new opportunities to apply my expertise to real-world projects. Known for my problem-solving abilities and passion for innovation, I’m ready to take on new professional challenges and also open to freelance work where my skills can be of value."
   };
 
   return (
