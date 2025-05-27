@@ -1,7 +1,7 @@
 import React from 'react';
 import {Tilt} from 'react-tilt';
 import { motion } from 'framer-motion'
-
+import { useState } from 'react';
 import { styles } from '../styles'
 import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
@@ -31,18 +31,50 @@ const ServiceCard = ({index, title, icon}) => {
 }
 
 const About = () => {
+
+  const [language, setLanguage] = useState('fr');
+
+  const translations = {
+    fr:"Je suis un développeur Fullstack avec des antécédents professionnels en IT (systèmes et réseaux), actuellement en Master en développement logiciel et IoT. Je suis à la recherche d'une opportunité en alternance en France pour appliquer mes compétences à des projets concrets et approfondir mon expertise. Reconnu pour mes capacités de résolution de problèmes et ma passion pour l'innovation, je suis déterminé à fournir des solutions de haute qualité qui favorisent le succès.",
+    en:"I am a Fullstack developer with professional experience in IT (systems and networks), currently pursuing a Master's degree in software and IoT development. I am seeking an apprenticeship opportunity in France to apply my skills to concrete projects and deepen my expertise. Recognized for my problem-solving abilities and passion for innovation, I am committed to delivering high-quality solutions that drive success."
+  };
+
   return (
     <>
       <motion.div>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
+
+        {/* Language toggle */}
+        <div className="flex gap-3">
+          <button
+            onClick={() => setLanguage('fr')}
+            className={`px-4 py-1 rounded-full text-sm ${
+              language === 'fr' 
+                ? 'bg-[#915EFF] text-white' 
+                : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200'
+            }`}
+          >
+            FR
+          </button>
+          <button
+            onClick={() => setLanguage('en')}
+            className={`px-4 py-1 rounded-full text-sm ${
+              language === 'en' 
+                ? 'bg-[#915EFF] text-white' 
+                : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200'
+            }`}
+          >
+            ENG
+          </button>
+        </div>
       </motion.div>
 
       <motion.p 
         variants={fadeIn('','','0.1','1')}
         className='mt-4 text-secondary text=[18px] max-w-3xl leading-[30px]'
       >
-        Je suis un développeur Fullstack avec des antécédents professionnels en IT (systèmes et réseaux), actuellement en Master en développement logiciel et IoT. Je suis à la recherche d'une opportunité en alternance en France pour appliquer mes compétences à des projets concrets et approfondir mon expertise. Reconnu pour mes capacités de résolution de problèmes et ma passion pour l'innovation, je suis déterminé à fournir des solutions de haute qualité qui favorisent le succès.
+        {translations[language]}
       </motion.p>
 
       <div className='mt-12 flex justify-center flex-wrap gap-10'>
