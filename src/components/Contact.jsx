@@ -25,6 +25,17 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
+
+    if (!form.name || !form.email || !form.message) {
+      alert('Please fill in all fields.');
+      setLoading(false);
+      return; // Stop submission if empty
+    }
+    if (!/\S+@\S+\.\S+/.test(form.email)) {
+      alert('Invalid email!');
+      setLoading(false);
+      return;
+    }
     emailjs.send(
       'service_b5q2w9u',
       'template_20m730l',
