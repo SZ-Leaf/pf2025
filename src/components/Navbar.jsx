@@ -60,9 +60,9 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <button className='text-white hidden sm:block px-2.5 bg-[#8A58B5] rounded-md'  onClick={openCvInNewTab}>
+          {/* <button className='text-white hidden sm:block px-2.5 bg-[#8A58B5] rounded-md'  onClick={openCvInNewTab}>
             CV 🠗
-          </button>
+          </button> */}
 
         </div>
 
@@ -91,9 +91,9 @@ const Navbar = () => {
                   <a href={`#${link.id}`}>{link.title}</a>
                 </li>
               ))}
-              <li className='text-white px-2.5 bg-[#8A58B5] rounded-md w-full text-center'>
+              {/* <li className='text-white px-2.5 bg-[#8A58B5] rounded-md w-full text-center'>
                 CV 🠗
-              </li>
+              </li> */}
             </ul>
 
           </div>
