@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { SpaceCanvas, StarsCanvas } from './canvas'
+import {github_logo, linkedin_logo} from '../assets/index.js'
 
 
 const Hero = () => {
@@ -26,6 +27,23 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Junior <span className='text-[#8A58B5]'>fullstack;</span> developer.
           </p>
+          <ul className='flex gap-4 mt-5 relative z-10'>
+            <li>
+              <a href="https://github.com/SZ-Leaf">
+                <img className='w-8 h-8' src={github_logo} alt="SZ-Leaf - Github" />
+              </a>
+            </li>
+              <a href="https://www.linkedin.com/in/saryzeaiter/">
+                <img className='w-8 h-8' src={linkedin_logo} alt="Sary Zeaiter - Linkedin" />
+              </a>
+            <li>
+              
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          
         </div>
       </div>
 
